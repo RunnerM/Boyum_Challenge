@@ -1,0 +1,46 @@
+﻿<Window x:Class="Boyum_Challenge.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Boyum_Challenge"
+        mc:Ignorable="d"
+        Title="Boyum Challenge" Height="450" Width="800">
+	<Grid>
+		<GroupBox Header="Result" Margin="134,93,10,29" FontSize="20">
+			<Grid>
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="1*" />
+					<ColumnDefinition Width="1*" />
+					<ColumnDefinition Width="1*" />
+				</Grid.ColumnDefinitions>
+				<Grid.RowDefinitions>
+					<RowDefinition Height="1*" />
+					<RowDefinition Height="1*" />
+					<RowDefinition Height="1*" />
+					<RowDefinition Height="1*" />
+					<RowDefinition Height="1*" />
+				</Grid.RowDefinitions>
+				<Label Content="Id"></Label>
+				<Label Grid.Row="1" Content="Customer"></Label>
+				<Label Grid.Row="2" Content="Date"></Label>
+				<Label Grid.Row="3" Content="Price Average"></Label>
+				<Label Grid.Row="4" Content="Total"></Label>
+                <Label  Grid.Column="1" Content="-" Name="IdLabel"/>
+				<Label Grid.Column="1" Grid.Row="1" Content="-" Name="CustomerLabel"></Label>
+				<Label Grid.Column="1" Grid.Row="2" Content="-" Name="DateLabel"></Label>
+				<Label Grid.Column="1" Grid.Row="3" Content="-" Name="PriceAvgLabel"></Label>
+				<Label Grid.Column="1" Grid.Row="4" Content="-" Name="TotalLabel"></Label>
+				
+			</Grid>
+
+
+		</GroupBox>
+		<TextBox HorizontalAlignment="Left" Margin="134,38,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="522" Height="30" FontSize="20" Name="TbFileName" />
+		<Button Content="Process" HorizontalAlignment="Left" Margin="698,38,0,0" VerticalAlignment="Top" FontSize="20" RenderTransformOrigin="0.243,-0.587" Width="79" Click="OnProcessBtn"/>
+		<Button Content="..." HorizontalAlignment="Left" Margin="661,38,0,0" VerticalAlignment="Top" FontSize="20" Width="32" Click="OnBrowseBtn"/>
+		<Label Content="Input XML" HorizontalAlignment="Left" Margin="28,32,0,0" VerticalAlignment="Top" FontSize="20" RenderTransformOrigin="0.424,0.592"/>
+
+
+	</Grid>
+</Window>
